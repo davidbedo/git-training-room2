@@ -14,8 +14,8 @@ public class MathUtils{
     }
 
     function getTriangleType(a,b,c) {
-      if (a !== b && a !== c && b !== c) return 1; //oarecare
       if (a === b || a === c || b === c) return 2; //isoscel
-      if (a === b && b === c) return 3; //echilateral
+      else if (a === b && b === c) return 3; //echilateral
+      else return 1; //oarecare
     }
 }
