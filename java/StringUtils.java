@@ -16,5 +16,11 @@ public String sustring(int beginIndex) {
        }    
        return (beginIndex == 0) ? this : new String(value, beginIndex, subLen);    
    } 
+    function palindrome(str) {
+      let lowStr = str.toLowerCase();
+      let reverseStr = lowRegStr.split('').reverse().join(''); 
+      return reverseStr === lowRegStr; 
+    }
+
 
 }
