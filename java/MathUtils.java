@@ -18,4 +18,16 @@ public class MathUtils{
       if (a === b || a === c || b === c) return 2; //isoscel
       if (a === b && b === c) return 3; //echilateral
     }
+
+    static boolean isPrime(int n)
+    {
+        if (n <= 1)
+            return false;
+
+        for (int i = 2; i < n; i++)
+            if (n % i == 0)
+                return false;
+  
+        return true;
+    }
 }
