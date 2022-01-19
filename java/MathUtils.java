@@ -17,12 +17,24 @@ public class MathUtils {
     }
 
     function getTriangleType(a,b,c) {
-      if (a !== b && a !== c && b !== c) return 1; //oarecare
       if (a === b || a === c || b === c) return 2; //isoscel
-      if (a === b && b === c) return 3; //echilateral
+      else if (a === b && b === c) return 3; //echilateral
+      else return 1; //oarecare
     }
 
     public double getAverage(int[] myArray){       
         return Arrays.stream(myArray).average().orElse(0);
+    }
+
+    static boolean isPrime(int n)
+    {
+        if (n <= 1)
+            return false;
+
+        for (int i = 2; i < n; i++)
+            if (n % i == 0)
+                return false;
+  
+        return true;
     }
 }
