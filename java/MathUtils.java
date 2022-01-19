@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Arrays;
 
-public class MathUtils{
+public class MathUtils {
 
     public static void main(String args[]){
         int nr=10;
@@ -22,8 +22,7 @@ public class MathUtils{
       if (a === b && b === c) return 3; //echilateral
     }
 
-    public double getAverage(int[] myArray){
-        int arrayLenght= myArray.length;
+    public double getAverage(int[] myArray){       
         return Arrays.stream(myArray).average().orElse(0);
     }
 }
