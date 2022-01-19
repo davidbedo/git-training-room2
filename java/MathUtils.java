@@ -12,4 +12,10 @@ public class MathUtils{
         }
         return factorial;
     }
+
+    function getTriangleType(a,b,c) {
+      if (a !== b && a !== c && b !== c) return 1; //oarecare
+      if (a === b || a === c || b === c) return 2; //isoscel
+      if (a === b && b === c) return 3; //echilateral
+    }
 }
