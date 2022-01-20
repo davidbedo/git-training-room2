@@ -39,6 +39,7 @@ public String sustring(int beginIndex) {
       let lowStr = str.toLowerCase();
       let reverseStr = lowRegStr.split('').reverse().join(''); 
       return reverseStr === lowRegStr; 
+      //test
     }
 
 }
